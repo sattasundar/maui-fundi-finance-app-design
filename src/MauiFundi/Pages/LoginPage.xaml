@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiFundi.Pages.LoginPage"
+             xmlns:helpers="clr-namespace:MauiFundi.Helpers"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{DynamicResource ColorPrimary}"
+             Title="LoginPage">
+    <Grid RowDefinitions="*,*,*">
+        <ImageButton Style="{DynamicResource BackImageButtonStyle}"
+                     Clicked="BackButton_Clicked">
+            <ImageButton.Source>
+                <FontImageSource Glyph="{x:Static helpers:IconFont.ChevronLeft}"
+                                 FontFamily="IconFontTypes"/>
+            </ImageButton.Source>
+        </ImageButton>
+        <Label Grid.Row="0" 
+               Style="{DynamicResource TitleLabelStyle}"
+               Margin="0,80,0,0"/>
+        <StackLayout Grid.Row="1"
+                     Padding="30,0"
+                     Spacing="20">
+            <Border Style="{DynamicResource EntryBorderStyle}">
+                <HorizontalStackLayout>
+                    <Image Style="{DynamicResource ImageEntryIconStyle}">
+                        <Image.Source>
+                            <FontImageSource Glyph="{x:Static helpers:IconFont.AccountOutline}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                        </Image.Source>
+                    </Image>
+                    <Entry Placeholder="Username"
+                           Style="{DynamicResource BasicEntryStyle}"/>
+                </HorizontalStackLayout>
+            </Border>
+            <Border Style="{DynamicResource EntryBorderStyle}">
+                <HorizontalStackLayout>
+                    <Image Style="{DynamicResource ImageEntryIconStyle}">
+                        <Image.Source>
+                            <FontImageSource Glyph="{x:Static helpers:IconFont.KeyVariant}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                        </Image.Source>
+                    </Image>
+                    <Entry Placeholder="Password"
+                           Style="{DynamicResource BasicEntryStyle}"/>
+                </HorizontalStackLayout>
+            </Border>
+            <Button Text="Login"
+                    Style="{DynamicResource PrimaryButtonStyle}"/>
+            <HorizontalStackLayout Spacing="10"
+                                   HorizontalOptions="CenterAndExpand">
+                <Label Text="New User?"
+                       FontFamily="PoppinsBold"
+                       TextColor="{DynamicResource ColorSmokeWhite}"/>
+                <Label Text="Create an account"
+                       TextDecorations="Underline"
+                       FontFamily="PoppinsBold"
+                       TextColor="{DynamicResource ColorAccent}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="CreateAccount_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </HorizontalStackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

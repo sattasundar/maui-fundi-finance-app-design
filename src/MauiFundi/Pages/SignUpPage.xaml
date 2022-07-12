@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiFundi.Pages.SignUpPage"
+             xmlns:helpers="clr-namespace:MauiFundi.Helpers"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{DynamicResource ColorPrimary}"
+             Title="SignUpPage">
+    <Grid>
+        <ImageButton Style="{DynamicResource BackImageButtonStyle}"
+                     Clicked="BackButton_Clicked">
+            <ImageButton.Source>
+                <FontImageSource Glyph="{x:Static helpers:IconFont.ChevronLeft}"
+                                 FontFamily="IconFontTypes"/>
+            </ImageButton.Source>
+        </ImageButton>
+        <VerticalStackLayout Margin="30,70,30,30"
+                             Spacing="15">
+            <Label Style="{DynamicResource TitleLabelStyle}"/>
+            <Label Text="Create account"
+                   Style="{DynamicResource HeaderLabelStyle}"/>
+            <Label Text="Fill in the data and we will send you an SMS code"
+                   Style="{DynamicResource SubHeaderLabelStyle}"
+                   Margin="30,0"/>
+            <Border Style="{DynamicResource EntryBorderStyle}">
+                <HorizontalStackLayout>
+                    <Image Style="{DynamicResource ImageEntryIconStyle}">
+                        <Image.Source>
+                            <FontImageSource Glyph="{x:Static helpers:IconFont.AccountOutline}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                        </Image.Source>
+                    </Image>
+                    <Entry Placeholder="Your Name"
+                           Style="{DynamicResource BasicEntryStyle}"/>
+                </HorizontalStackLayout>
+            </Border>
+            <Border Style="{DynamicResource EntryBorderStyle}">
+                <HorizontalStackLayout>
+                    <Image Style="{DynamicResource ImageEntryIconStyle}">
+                        <Image.Source>
+                            <FontImageSource Glyph="{x:Static helpers:IconFont.EmailOutline}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                        </Image.Source>
+                    </Image>
+                    <Entry Placeholder="E-mail address"
+                           Keyboard="Email"
+                           Style="{DynamicResource BasicEntryStyle}"/>
+                </HorizontalStackLayout>
+            </Border>
+            <Border Style="{DynamicResource EntryBorderStyle}">
+                <HorizontalStackLayout>
+                    <Image Style="{DynamicResource ImageEntryIconStyle}">
+                        <Image.Source>
+                            <FontImageSource Glyph="{x:Static helpers:IconFont.Cellphone}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                        </Image.Source>
+                    </Image>
+                    <Entry Placeholder="Phone number"
+                           Keyboard="Telephone"
+                           Style="{DynamicResource BasicEntryStyle}"/>
+                </HorizontalStackLayout>
+            </Border>
+            <Border Style="{DynamicResource EntryBorderStyle}">
+                <HorizontalStackLayout>
+                    <Image Style="{DynamicResource ImageEntryIconStyle}">
+                        <Image.Source>
+                            <FontImageSource Glyph="{x:Static helpers:IconFont.KeyVariant}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                        </Image.Source>
+                    </Image>
+                    <Entry Placeholder="Password"
+                           Style="{DynamicResource BasicEntryStyle}"/>
+                </HorizontalStackLayout>
+            </Border>
+            <Border Style="{DynamicResource EntryBorderStyle}">
+                <HorizontalStackLayout>
+                    <Image Style="{DynamicResource ImageEntryIconStyle}">
+                        <Image.Source>
+                            <FontImageSource Glyph="{x:Static helpers:IconFont.KeyVariant}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                        </Image.Source>
+                    </Image>
+                    <Entry Placeholder="Confirm password"
+                           Style="{DynamicResource BasicEntryStyle}"/>
+                </HorizontalStackLayout>
+            </Border>
+            <Button Text="Next"
+                    Style="{DynamicResource PrimaryButtonStyle}"/>
+            <HorizontalStackLayout Spacing="10"
+                                   HorizontalOptions="CenterAndExpand">
+                <Label Text="Already have an account?"
+                       FontFamily="PoppinsBold"
+                       TextColor="{DynamicResource ColorSmokeWhite}"/>
+                <Label Text="Login here?"
+                       TextDecorations="Underline"
+                       FontFamily="PoppinsBold"
+                       TextColor="{DynamicResource ColorAccent}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Login_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

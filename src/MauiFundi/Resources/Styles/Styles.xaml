@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Style x:Key="TitleLabelStyle" TargetType="Label">
+        <Setter Property="Text" Value="fundi"/>
+        <Setter Property="FontSize" Value="34"/>
+        <Setter Property="FontFamily" Value="PoppinsBoldItalic"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        <Setter Property="TextColor" Value="{DynamicResource ColorAccent}"/>
+    </Style>
+    <Style x:Key="HeaderLabelStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="28"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="PoppinsBold"/>
+        <Setter Property="TextColor" Value="{DynamicResource ColorSmokeWhite}"/>
+    </Style>
+    <Style x:Key="SubHeaderLabelStyle" TargetType="Label">
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="PoppinsRegular"/>
+        <Setter Property="TextColor" Value="{DynamicResource ColorSmokeWhite}"/>
+    </Style>
+    <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{DynamicResource ColorAccent}"/>
+        <Setter Property="HeightRequest" Value="55"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="FontFamily" Value="PoppinsBold"/>
+        <Setter Property="TextColor" Value="{DynamicResource ColorSmokeWhite}"/>
+    </Style>
+    <Style x:Key="SecondaryButtonStyle" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="Transparent"/>
+        <Setter Property="HeightRequest" Value="55"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="FontFamily" Value="PoppinsBold"/>
+        <Setter Property="TextColor" Value="{DynamicResource ColorPrimary}"/>
+        <Setter Property="BorderColor" Value="{DynamicResource ColorPrimary}"/>
+        <Setter Property="BorderWidth" Value="1"/>
+    </Style>
+    <Style x:Key="EntryBorderStyle" TargetType="Border">
+        <Setter Property="Stroke" Value="{DynamicResource ColorAccent}"/>
+        <Setter Property="StrokeThickness" Value="1"/>
+        <Setter Property="BackgroundColor" Value="Transparent"/>
+        <Setter Property="HeightRequest" Value="55"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="StrokeShape">
+            <Setter.Value>
+                <RoundRectangle CornerRadius="10"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="BasicEntryStyle" TargetType="Entry">
+        <Setter Property="PlaceholderColor" Value="{DynamicResource ColorDusky}"/>
+        <Setter Property="TextColor" Value="{DynamicResource ColorSmokeWhite}"/>
+        <Setter Property="HeightRequest" Value="40"/>
+    </Style>
+    <Style x:Key="ImageEntryIconStyle" TargetType="Image">
+        <Setter Property="HeightRequest" Value="20"/>
+        <Setter Property="WidthRequest" Value="20"/>
+        <Setter Property="Aspect" Value="AspectFit"/>
+    </Style>
+    <Style x:Key="BackImageButtonStyle" TargetType="ImageButton">
+        <Setter Property="BackgroundColor" Value="{DynamicResource ColorSecondary}"/>
+        <Setter Property="HeightRequest" Value="40"/>
+        <Setter Property="WidthRequest" Value="40"/>
+        <Setter Property="HorizontalOptions" Value="Start"/>
+        <Setter Property="VerticalOptions" Value="Start"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Margin" Value="10,20"/>
+    </Style>
+</ResourceDictionary>
