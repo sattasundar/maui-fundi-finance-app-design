@@ -10,7 +10,12 @@ _(Work in progress)_
 Based on this [design](https://www.behance.net/gallery/139111749/Fundi-UIUX-App-Design) by [Mateusz Grad](https://www.behance.net/Mateusz_Grad).
 
 # Screenshots
-
+## Android
+<p float="left">
+  <img src="https://github.com/sattasundar/maui-fundi-finance-app-design/blob/main/screenshots/android-welcome.jpg" width="300" height="650"/>
+  <img src="https://github.com/sattasundar/maui-fundi-finance-app-design/blob/main/screenshots/android-login.jpg" width="300" height="650"/>
+  <img src="https://github.com/sattasundar/maui-fundi-finance-app-design/blob/main/screenshots/android-signup.jpg" width="300" height="650"/>
+</p>  
 
 ## Copyright and license
 
