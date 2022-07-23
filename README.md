@@ -1,7 +1,7 @@
 # Fundi(Finance) App - .NET MAUI UI/UX Design Challenge
 _(Work in progress)_
 
-
+ Part 1: Start screen, login and signup screen done.
 
 # Original Design
 
@@ -12,9 +12,9 @@ Based on this [design](https://www.behance.net/gallery/139111749/Fundi-UIUX-App-
 # Screenshots
 ## Android
 <p float="left">
-  <img src="https://github.com/sattasundar/maui-fundi-finance-app-design/blob/main/screenshots/android-welcome.jpg" width="300" height="650"/>
-  <img src="https://github.com/sattasundar/maui-fundi-finance-app-design/blob/main/screenshots/android-login.jpg" width="300" height="650"/>
-  <img src="https://github.com/sattasundar/maui-fundi-finance-app-design/blob/main/screenshots/android-signup.jpg" width="300" height="650"/>
+  <img src="https://github.com/sattasundar/maui-fundi-finance-app-design/blob/main/screenshots/android-welcome.png" width="300" height="650"/>
+  <img src="https://github.com/sattasundar/maui-fundi-finance-app-design/blob/main/screenshots/android-login.png" width="300" height="650"/>
+  <img src="https://github.com/sattasundar/maui-fundi-finance-app-design/blob/main/screenshots/android-signup.png" width="300" height="650"/>
 </p>  
 
 ## Copyright and license
