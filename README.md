@@ -1,4 +1,4 @@
-# Fundi(Finance) App - .NET MAUI UI/UX Design Challenge
+# Fundi(Finance) App - .NET MAUI UI Design Showcase
 _(Work in progress)_
 
  Part 1: Start screen, login and signup screen done.
